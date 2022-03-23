@@ -23,7 +23,7 @@ public class Question {
 	private String qstatus;
 	
 	@ManyToOne
-	@JoinColumn(name="question_Id")
+	@JoinColumn(name="sid")
 	private Subject subjects;
 
 	public int getQuestion_Id() {

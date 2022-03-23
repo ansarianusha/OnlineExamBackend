@@ -26,6 +26,7 @@ public class AdminController {
 			AdminLoginStatus loginStatus=new AdminLoginStatus();
 			loginStatus.setStatus(true);
 			loginStatus.setAdminId(admin1.getAdmin_Id());
+			//loginStatus.setAdminName(admin1.getAdmin_Name());
 			return loginStatus;
 			
 		}catch(AdminServiceException e) {

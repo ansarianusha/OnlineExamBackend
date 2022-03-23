@@ -15,11 +15,11 @@ public class Result {
 	
 	private String status;
 	private double score;
-	private int rlevel;
+	private int levels;
 	
 	@ManyToOne
 	@JoinColumn(name="exam_Id")
-	private Exam exam;
+	private Exam examsResult;
 	
 	@OneToOne
 	@JoinColumn(name="user_Id")
@@ -49,20 +49,20 @@ public class Result {
 		this.score = score;
 	}
 
-	public int getRlevel() {
-		return rlevel;
+	public int getLevels() {
+		return levels;
 	}
 
-	public void setRlevel(int rlevel) {
-		this.rlevel = rlevel;
+	public void setLevels(int levels) {
+		this.levels = levels;
 	}
 
-	public Exam getExam() {
-		return exam;
+	public Exam getExamsResult() {
+		return examsResult;
 	}
 
-	public void setExam(Exam exam) {
-		this.exam = exam;
+	public void setExamsResult(Exam examsResult) {
+		this.examsResult = examsResult;
 	}
 
 	public Users getUsers() {
@@ -75,7 +75,6 @@ public class Result {
 	
 	
 
-	
 
 
 }

@@ -5,6 +5,7 @@ public class AdminLoginStatus {
 	private String messageIfAny;
 	private int adminId;
 	
+	
 	public boolean isStatus() {
 		return status;
 	}
@@ -23,5 +24,7 @@ public class AdminLoginStatus {
 	public void setAdminId(int adminId) {
 		this.adminId = adminId;
 	}
+	
+	
 	
 }

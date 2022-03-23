@@ -20,7 +20,7 @@ public class Answer {
 	
 	@ManyToOne
 	@JoinColumn(name="exam_Id")
-	private Exam exams;
+	private Exam examAns;
 
 	public int getAnswerid() {
 		return answerid;
@@ -38,14 +38,14 @@ public class Answer {
 		this.questions = questions;
 	}
 
-	public Exam getExams() {
-		return exams;
+	public Exam getExamAns() {
+		return examAns;
 	}
 
-	public void setExams(Exam exams) {
-		this.exams = exams;
+	public void setExamAns(Exam examAns) {
+		this.examAns = examAns;
 	}
-	
-	
+
+	 
 
 }

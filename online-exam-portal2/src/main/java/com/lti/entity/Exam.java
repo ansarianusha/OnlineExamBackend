@@ -18,20 +18,20 @@ public class Exam {
 	private int exam_Id;
 	
 	private String exam_Name;
-	private int level;
+	private int elevel;
 	private LocalDate exam_Date;
 	
 	@ManyToOne
 	@JoinColumn(name="user_Id")
 	private Users users;
 	
-	@OneToMany(mappedBy="exam")
+	@OneToMany(mappedBy="exams")
 	List<Subject> subject;
 	
-	@OneToMany(mappedBy="exams")
+	@OneToMany(mappedBy="examAns")
 	List<Answer> answers;
 	
-	@OneToMany(mappedBy="exam")
+	@OneToMany(mappedBy="examsResult")
 	List<Result> results;
 
 	public int getExam_Id() {
@@ -50,12 +50,12 @@ public class Exam {
 		this.exam_Name = exam_Name;
 	}
 
-	public int getLevel() {
-		return level;
+	public int getElevel() {
+		return elevel;
 	}
 
-	public void setLevel(int level) {
-		this.level = level;
+	public void setElevel(int elevel) {
+		this.elevel = elevel;
 	}
 
 	public LocalDate getExam_Date() {
@@ -98,5 +98,5 @@ public class Exam {
 		this.results = results;
 	}
 
-	
+	 
 }
